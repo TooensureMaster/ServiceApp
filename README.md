@@ -1,10 +1,18 @@
 # ServiceApp
 
-<div style="display:flex;">
-    <div><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/hero.png"></div>
-    <div><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/product_list.png"></div>
-    <div><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/product_item.png"></div>
-</div>
+<table>
+  <tr>
+    <td>First Screen Page</td>
+     <td>Holiday Mention</td>
+     <td>Present day in purple and selected day in pink</td>
+  </tr>
+  <tr>
+    <td><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/hero.png"></td>
+    <td><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/product_list.png"></td>
+    <td><img width="100%" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/product_item.png"></td>
+  </tr>
+ </table>
+ 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
 
 ## Development server
