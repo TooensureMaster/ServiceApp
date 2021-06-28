@@ -1,6 +1,6 @@
 # ServiceApp
 
-<img src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/hero.png">
+<img width="20rem" src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/hero.png">
 
 <img src="https://github.com/TooensureMaster/ServiceApp/blob/main/src/assets/img/ui/mobile/android/product_list.png">
 
