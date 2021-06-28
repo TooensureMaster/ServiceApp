@@ -1,0 +1,30 @@
+<section class="d-flex flex-wrap">
+    <article class="d-flex flex-wrap">
+        <a
+        *ngFor="let product of products"
+        [routerLink]="['/detail']"
+        style="text-decoration: none;" 
+        class="text-dark">
+            <div class="card mb-5" style="width: 18rem;">
+                <img [src]="product.imagePath" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <section class="row">
+                        <div class="col-6">
+                            <div>
+                                <h5 class="card-title">{{ product.name }}</h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-end">
+                                <small class="card-title">${{ product.priceTag }}</small>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="card-text">{{ product.description }}</p>
+                </div>
+            </div>
+        </a>
+    </article>
+    
+    <!-- <app-product-item></app-product-item> -->
+</section>

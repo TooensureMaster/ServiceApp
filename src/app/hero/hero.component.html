@@ -1,0 +1,85 @@
+
+<!-- Hero -->
+<section class="border-bottom mb-5 bg-light bg-gradient">
+    <section class="container col-xxl-8 px-4 py-5">
+        <section class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="../../assets/img/images.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 id={{listOfIds[0]}}
+                [ngClass]="{'border rounded': editMode === true}" 
+                class="display-5 fw-bold lh-1 mb-3" 
+                (click)="setSelected(listOfIds[0])">{{ title }}
+            </h1>
+            <p  id={{listOfIds[1]}}
+                [ngClass]="{'border rounded': editMode === true}" 
+                class="lead" 
+                (click)="setSelected(listOfIds[1])">{{ subtitle }}
+            </p>
+
+            <!-- Lack of Knowlegde: Place buttons in a component and render text within selector -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button id={{listOfIds[2]}} type="button" class="btn btn-primary btn-lg px-4 me-md-2" (click)="onCreateEditMode()">{{ primaryBtnText }}</button>
+                <button id={{listOfIds[3]}} type="button" class="btn btn-outline-secondary btn-lg px-4" [routerLink]="['/shop']">{{ secondaryBtnText }}</button>
+            </div>
+            <!-- <div *ngIf="!editMode; else editModeBtn" class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button id={{listOfIds[2]}} type="button" class="btn btn-primary btn-lg px-4 me-md-2" (click)="onCreateEditMode()">{{ primaryBtnText }}</button>
+                <button id={{listOfIds[3]}} type="button" class="btn btn-outline-secondary btn-lg px-4" (click)="onCreateEditMode()">{{ secondaryBtnText }}</button>
+            </div>
+            <ng-template #editModeBtn>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button id={{listOfIds[2]}} type="button" class="btn btn-primary btn-lg px-4 me-md-2" (click)="setSelected(listOfIds[1])">{{ primaryBtnText }}</button>
+                    <button id={{listOfIds[3]}} type="button" class="btn btn-outline-secondary btn-lg px-4" (click)="setSelected(listOfIds[1])">{{ secondaryBtnText }}</button>
+                </div>
+            </ng-template> -->
+        </div>
+        </section>
+    </section>
+</section>
+<!-- Display none when edit-mode is diabled -->
+<div class="fixed-bottom">
+    <section *ngIf="editContent" class="border bg-light p-3">
+        <h4>Edit</h4>
+        <div class="input-group input-group-lg">
+            <input 
+                type="text" 
+                class="form-control" 
+                aria-label="Sizing example input" 
+                aria-describedby="inputGroup-sizing-lg"
+                (input)="onUpdateContent($event)"
+            >
+        </div>
+    </section>
+    <section *ngIf="editMode" class="border bg-light p-2">
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" (click)="editorSwitch()">Save</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" (click)="editorModeSwitch()">Update & Exit</button>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EXAMPLE CODE -->
+<!-- <h1 id="1"
+    [ngClass]="{'shadow-lg bg-body rounded': selectedIndex == 1}"
+    [ngClass]="cssStyle" (mouseover)="changeStyle($event)" (mouseout)="changeStyle($event)" 
+    class="display-5 fw-bold lh-1 mb-3" 
+    (click)="setSelected(1)">{{ title }}
+</h1> -->
